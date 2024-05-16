@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 :root {
-    --bg: #0F0F0F;
+    --bg: rgb(92,115,157);
     --primary: #008170;
     --border: #ccc;
-    --text: #000;
-    --white: #fff;
+    --text: rgb(49,48,44);
+    --white: rgb(255,255,255);
     --font: "Open Sans", sans-serif;
 }
 
@@ -18,6 +18,9 @@
 body {
     font-family: var(--font);
     color: var(--text);
+    background: var(--white);
+    height: 100vh;   
+    width: 100%;
 }
 
 a {
@@ -36,22 +39,24 @@ a {
 }
 
 .main-menu {
-    background: var(--bg);
+    background: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
+    color: var(--font);
     grid-area: nav;
 }
 
 .menu-toggler {
-    background: none;
+    background: var(--white);
     border: none;
-    color: #fff;
-    font-size: 1.25rem;
+    color: var(--text);
+    font-size: 1.5rem;
 }
 
 .main-menu ul {
+    /* background: var(--white); */
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -68,9 +73,10 @@ a {
     transition: transform 0.2s ease;
 }
 
-.main-menu .logo {
-    font-size: 1.5rem;
-    font-weight: 700;
+.main-menu .logo img {
+    width: 13rem;
+    /* height: 5rem; */
+    object-fit:cover;
 }
 
 .main-menu a {
