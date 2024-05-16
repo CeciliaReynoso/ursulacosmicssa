@@ -103,7 +103,7 @@ a {
 }
 
 header {
-    background: url("../img/header.jpg");
+    background: url("../img/constelaciones-osa-mayor-osa-menor_23-2150028870.jpg");
     background-position: center 60%;
     height: 30vh;
     display: flex;
@@ -113,6 +113,18 @@ header {
     color: var(--white);
     margin-bottom: 2rem;
     grid-area: header;
+    animation: spin 60s linear alternate-reverse infinite;
+}
+
+@keyframes spin {
+    /* from {
+        transform: translateX(0%);
+    } */
+    to {
+        transform: translateX(-50%);
+    }
+}
+
 }
 
 header h1 {
