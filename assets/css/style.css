@@ -115,7 +115,7 @@ header  {
 }
 header  > div {
     background: url("../img/constelaciones-osa-mayor-osa-menor_23-2150028870.jpg");
-    /* position: absolute; */
+    background-repeat: no-repeat;
     color: var(--white);
     width: 200%;
     height: 99%;
@@ -135,11 +135,19 @@ header  > div {
 
 header h1 {
     font-size: 3rem;
-    position: absolute;
+    position: relative;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 header p {
     font-size: 1.25rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 article {
