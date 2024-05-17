@@ -4,7 +4,7 @@
     --bg: rgb(92,115,157);
     --primary: #008170;
     --border: #ccc;
-    --text: rgb(49,48,44);
+    --text: rgb(49,48,44); 
     --white: rgb(255,255,255);
     --font: "Open Sans", sans-serif;
 }
@@ -42,7 +42,7 @@ a {
     background: none;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
     padding: 1rem 2rem;
     color: var(--font);
     grid-area: nav;
@@ -77,6 +77,8 @@ a {
     width: 13rem;
     /* height: 5rem; */
     object-fit:cover;
+    background: none;
+    position: relative;
 }
 
 .main-menu a {
@@ -89,7 +91,7 @@ a {
 }
 
 .open .main-menu {
-    position: fixed;
+    position: -webkit-sticky;
     top: 0;
     width: 100%;
 }
@@ -101,6 +103,8 @@ a {
 .open .main-menu ul {
     transform: translateX(0);
 }
+
+/* Secuencia de Header */
 
 header  { 
     background: url("../img/constelaciones-osa-mayor-osa-menor_23-2150028870.jpg");
@@ -120,12 +124,12 @@ header  > div {
     color: var(--white);
     width: 200%;
     height: 99%;
-    animation: spin 60s linear infinite;
+    animation: spin 60s linear 1;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
+    gap: 4rem;
 
 }
 
@@ -145,12 +149,11 @@ header img {
     }
 }
 
-}
 
 header h2 {
     /* font-size: 0.5rem; */
     /* font-weight: 100; */
-    position: absolute;
+    position: relative;
     color: var(--white);
     display: flex;
     flex-direction: row;
