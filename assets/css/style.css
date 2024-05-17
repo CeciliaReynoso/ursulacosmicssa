@@ -102,18 +102,24 @@ a {
     transform: translateX(0);
 }
 
-header {
+header  { 
     background: url("../img/constelaciones-osa-mayor-osa-menor_23-2150028870.jpg");
-    background-position: center 60%;
+    background-repeat: no-repeat;
     height: 30vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: var(--white);
-    margin-bottom: 2rem;
+     /* margin-bottom: 2rem; */
     grid-area: header;
-    animation: spin 60s linear alternate-reverse infinite;
+}
+header  > div {
+    background: url("../img/constelaciones-osa-mayor-osa-menor_23-2150028870.jpg");
+    /* position: absolute; */
+    color: var(--white);
+    width: 200%;
+    height: 99%;
+    animation: spin 60s linear infinite;
 }
 
 @keyframes spin {
@@ -129,6 +135,7 @@ header {
 
 header h1 {
     font-size: 3rem;
+    position: absolute;
 }
 
 header p {
