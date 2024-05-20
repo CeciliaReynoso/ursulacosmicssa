@@ -3,140 +3,419 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
+    <title>Ursula Cosmic</title>
     <script src="https://kit.fontawesome.com/c22aaaff9c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <div id="root">
-        <nav class="main-menu">
-            <a href="#" class="logo">
-                <img src="https://static.wixstatic.com/media/528fcb_ab864308c3514e4e81f2350e6da9e61c~mv2.jpg/v1/crop/x_47,y_129,w_398,h_229/fill/w_414,h_212,al_c,lg_1,q_80,enc_auto/logo%20ursula.jpg" alt="logo"> 
-            </a>
+    <!-- Importante considerar!!!!! -->
+    <!-- Este documento solo tiene efecto como práctica y examinación de lo aprendido en el curso de CSS Avanzado que he cursado en la Academia Desafío Latam-->
+    <!-- La marca y el personaje "Úrsula Cosmic" existen en verdad en la Web y la mayor parte de los enlaces utiliados llevan a secciones de la página real de Úrsula: "https://www.ursulacosmic.com" -->
+    <!-- las animaciones solo tienen efecto en este proyecto no en la pagina web real -->
+    <!-- Las @media queries utilizadas en este proyeccto solo tienen efecto dentro del mismo, no en los enlaces a secciones de la página web real -->
+<div id="root" class="grid-container">
+    <!-- Comienza mobile -->
+    <nav class="main-menu">
+        <div class="logo">
+            <img src="https://static.wixstatic.com/media/528fcb_ab864308c3514e4e81f2350e6da9e61c~mv2.jpg/v1/crop/x_47,y_129,w_398,h_229/fill/w_414,h_212,al_c,lg_1,q_80,enc_auto/logo%20ursula.jpg" alt="logo"> 
+        </div>
+        <div class="ula">  
+             <button type="button" onclick="scrollToSection('lateral')">Servicios</button>
+             <a href="https://www.ursulacosmic.com/sobre-mi">Perfil</a>
+             <a href="https://www.ursulacosmic.com/contacto">Contacto</a>
+        </div>
+    </nav>
+    <div class="parafijar">
+        <header>
+        <div class="header-mobile">
+            <div>
+            <img src="/assets/img/cartanataldorada.webp" alt="cartadorada">
+            </div>
+            <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                 <h2>Astrología Evolutiva</h2>
+                 <p>Cursos-Consultas-Eventos</p>
+            </div>
+            <img src="/assets/img/cartanataldorada.webp" alt="cartadorada">
+        </div>             
+    </header>
+    <article>
+        <p><bold>"El astrólogo consultó a los astros y estos le respondieron: <br> Si caminas  solo mirando el camino te perderías, <br> pero si miras al cielo nosotros te guiaremos, <br>a cada paso te iluminaremos. <br> Y si te sientes solo te consolaremos."</bold></p>
+        <!-- <img src="https://static.wixstatic.com/media/528fcb_6f3fdd0404bf43ddae7d08dfe7b6d5ec~mv2.jpg/v1/crop/x_32,y_55,w_2431,h_1597/fill/w_695,h_456,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/TEXTO%20ABOUTME1.jpg" alt="frase1"> -->
+        <p><bold>Bienvenido al cosmos</bold></p>
+        <p><bold>Ursula Cosmic<bold></p>
 
-            <button id="toggler" class="menu-toggler">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-            
+    </article>
+
+    <aside id="lateral">
+        <div class="widget">
+            <h3>Servicios astrales</h3>
             <ul>
                 <li>
-                    <a href="#">Inicio</a>
+                    <a href="https://www.ursulacosmic.com/astro-cursos">Astro-cursos. Lista completa.</a>
                 </li>
                 <li>
-                    <a href="#">Destacados</a>
+                    <a href="https://www.ursulacosmic.com/astro-consultas">Astro-consultas. Lista completa.</a>
                 </li>
                 <li>
-                    <a href="#">Contacto</a>
+                    <a href="https://www.ursulacosmic.com/astrocursos">Próximo curso en vivo.</a>
                 </li>
             </ul>
-        </nav>
-
-        <header>
- 
-            <div class="header-mobile">
-                <img src="/assets/img/cartanataldorada.webp" alt="cartadorada">
-                <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                <h2>Astrología Evolutiva</h2>
-                <p>Cursos - Consultas - Eventos</p>
+        </div>
+        <div class="widget">
+            <h3>Destacados</h3>
+            <ul>
+                <li>
+                    <a href="https://www.ursulacosmic.com/guias-pdf">Guía astrológica 2024</a>
+                </li>
+                <li>
+                    <a href="https://www.ursulacosmic.com/aquelarre-2024">Eventos</a>
+                </li>
+                <li>
+                    <a href="https://www.ursulacosmic.com/membresia">Membresía</a>
+                </li>
+            </ul>
+        </div>
+        <div class="sobremi">
+            <h3>Acerca de mí</h3>
+            <ul>
+                <li>
+                    <a href="https://www.ursulacosmic.com/sobre-mi">Perfil</a>
+                </li>
+                <li>
+                    <a href="https://www.ursulacosmic.com/contacto">Contáctame</a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+    <!-- Seccion Galeria de imagenes -->
+    <!-- Seccion Galeria de imagenes -->
+    <div class="galeria">
+        <h3>Te puede interesar lo más buscado:</h3> 
+        <div class="grilla">
+        <!-- tarjeta1 -->
+            <div class="card">                 
+                <div class="card-body">
+                        <div class="cont-img">
+                            <img src="/assets/img/c1-carta natal.PNG" alt="card1">                              
+                        </div>     
+                        <div class="card-textos">  
+                            <h5>Tu Carta Astral</h5>
+                            <small></small>
+                        </div>    
                 </div>
-                <img src="/assets/img/cartanataldorada.webp" alt="cartadorada">
-            </div> 
-        </header>
-        
+                    <div class="card-footer1">$95 CAD/75 USD</div>
+                    <div class="card-footer2">
+                        <a class="vermas"  href="https://www.ursulacosmic.com/astro-consultas#comp-lps/pfj4__item1">
+                          <button type="button">+ INFO</button>
+                        </a>
+                    </div>  
+            </div>
+            <!-- tarjeta2 -->
+            <div class="card">                 
+                <div class="card-body">
+                        <div class="cont-img">
+                            <img src="/assets/img/c2-eclipses.PNG" alt="card2">
+                        </div>     
+                        <div class="card-textos">  
+                            <h5>Los Eclipses: El poder de trascender</h5>
+                            <small></small>
+                        </div>    
+                </div>
+                    <div class="card-footer1">$140CAD/105 USD</div>
+                    <div class="card-footer2">
+                        <a class="vermas"  href="https://www.ursulacosmic.com/inscripcion-astrocursos#comp-lq2ewns3">
+                          <button type="button">+ INFO</button>
+                        </a>
+                    </div>  
+            </div>
+            <!-- tarjeta3 -->
+            <div class="card">                 
+                <div class="card-body">
+                        <div class="cont-img">
+                            <img src="/assets/img/c3-ciclo lunar.PNG" alt="card3">
+                        </div>     
+                        <div class="card-textos">  
+                            <h5>Taller lunar</h5>
+                            <small></small>
+                        </div>    
+                </div>
+                    <div class="card-footer1">$80 CAD/60 USD</div>
+                    <div class="card-footer2">
+                        <a class="vermas"  href="https://www.ursulacosmic.com/inscripcion-astrocursos#comp-lq2goqy9">
+                          <button type="button">+ INFO</button>
+                        </a>
+                    </div>  
+            </div>
+            <!-- tarjeta4 -->
+            <div class="card">                 
+                <div class="card-body">
+                        <div class="cont-img">
+                            <img src="/assets/img/c4-transitos.PNG" alt="card4">
+                        </div>     
+                        <div class="card-textos">  
+                            <h5>Tránsitos y tus ciclos personales</h5>
+                            <small></small>
+                        </div>    
+                </div>
+                    <div class="card-footer1">$170 CAD/130 USD</div>
+                    <div class="card-footer2">
+                        <a class="vermas"  href="https://www.ursulacosmic.com/inscripcion-astrocursos#comp-lq2g1jzp">
+                          <button type="button">+ INFO</button>
+                        </a>
+                    </div>  
+            </div>
+            <!-- tarjeta5 -->
+            <div class="card">                 
+                <div class="card-body">
+                        <div class="cont-img">
+                            <img src="/assets/img/c5-sinastria.PNG" alt="card5">
+                        </div>     
+                        <div class="card-textos">  
+                            <h5>Sinastría</h5>
+                            <small></small>
+                        </div>    
+                </div>
+                    <div class="card-footer1">$95 CAD/70 USD</div>
+                    <div class="card-footer2">
+                        <a class="vermas"  href="https://www.ursulacosmic.com/astro-consultas#comp-lpslpfi8__item-j9r9uxns">
+                          <button type="button">+ INFO</button>
+                        </a>
+                    </div>  
+            </div>
+            <!-- tarjeta6 -->
+            <div class="card">                 
+                <div class="card-body">
+                        <div class="cont-img">
+                            <img src="/assets/img/c-6 revolucion solar.PNG" alt="card6">
+                        </div>     
+                        <div class="card-textos">  
+                            <h5>Revolución Solar: Descubre tendencias de cada año</h5>
+                            <small></small>
+                        </div>    
+                </div>
+                    <div class="card-footer1">$190 CAD/145 USD</div>
+                    <div class="card-footer2">
+                        <a class="vermas"  href="https://www.ursulacosmic.com/inscripcion-astrocursos#comp-lq2efzyy">
+                          <button type="button">+ INFO</button>
+                        </a>
+                    </div>  
+            </div>
+
+        </div>  
+    </div>        
+</div>   
+<!--termina mobile  -->
+
+<!--Comienza la version escritorio  -->
+    <div class="paraescritorio">
+        <div class="header-escritorio">
+            <div class="moon">
+            <div></div>
+            </div>
+        </div>
         <article>
-            <h2>Reprehenderit quibusdam?</h2>
-            <p>"El astrólogo consultó a los astros y estos le respondieron: <br> Si caminas  solo mirando el camino te perderías, <br> pero si miras al cielo nosotros te guiaremos, <br>a cada paso te iluminaremos. <br> Y si te sientes solo te consolaremos."</p>
+            <p><bold>"El astrólogo consultó a los astros y estos le respondieron: <br> Si caminas  solo mirando el camino te perderías, <br> pero si miras al cielo nosotros te guiaremos, <br>a cada paso te iluminaremos. <br> Y si te sientes solo te consolaremos."</bold></p>
+            <!-- <img src="https://static.wixstatic.com/media/528fcb_6f3fdd0404bf43ddae7d08dfe7b6d5ec~mv2.jpg/v1/crop/x_32,y_55,w_2431,h_1597/fill/w_695,h_456,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/TEXTO%20ABOUTME1.jpg" alt="frase1"> -->
+            <p><bold>Bienvenido al cosmos</bold></p>
+            <p><bold>Ursula Cosmic<bold></p>
+
         </article>
 
-        <aside>
+        <aside id="lateral">
+            <div href="#" class="logo">
+                <img src="https://static.wixstatic.com/media/528fcb_ab864308c3514e4e81f2350e6da9e61c~mv2.jpg/v1/crop/x_47,y_129,w_398,h_229/fill/w_414,h_212,al_c,lg_1,q_80,enc_auto/logo%20ursula.jpg" alt="logo"> 
+            </div>
+            <div class="widget">
+                <h3>Servicios astrales</h3>
+                <ul>
+                    <li>
+                        <a href="https://www.ursulacosmic.com/astro-cursos">Astro-cursos. Lista completa.</a>
+                    </li>
+                    <li>
+                        <a href="https://www.ursulacosmic.com/astro-consultas">Astro-consultas. Lista completa.</a>
+                    </li>
+                    <li>
+                        <a href="https://www.ursulacosmic.com/astrocursos">Próximo curso en vivo.</a>
+                    </li>
+                </ul>
+            </div>
             <div class="widget">
                 <h3>Destacados</h3>
                 <ul>
                     <li>
-                        <a href="#">Post destacado 1</a>
+                        <a href="https://www.ursulacosmic.com/guias-pdf">Guía astrológica 2024</a>
                     </li>
                     <li>
-                        <a href="#">Post destacado 2</a>
+                        <a href="https://www.ursulacosmic.com/aquelarre-2024">Eventos</a>
                     </li>
                     <li>
-                        <a href="#">Post destacado 3</a>
-                    </li>
-                    <li>
-                        <a href="#">Post destacado 4</a>
+                        <a href="https://www.ursulacosmic.com/membresia">Membresía</a>
                     </li>
                 </ul>
             </div>
-            <div class="widget">
-                <h3>Categorías</h3>
+                <div class="sobremi">
+                <h3>Acerca de mí</h3>
                 <ul>
                     <li>
-                        <a href="#">Categoría 1</a>
+                        <a href="https://www.ursulacosmic.com/sobre-mi">Perfil</a>
                     </li>
                     <li>
-                        <a href="#">Categoría 2</a>
+                        <a href="https://www.ursulacosmic.com/contacto">Contáctame</a>
                     </li>
-                    <li>
-                        <a href="#">Categoría 3</a>
-                    </li>
-                    <li>
-                        <a href="#">Categoría 4</a>
-                    </li>
+                    <li>   
+                    <img src="https://static.wixstatic.com/media/7d0edb_5f4ca4fe72744257b40d89b8dc760159~mv2.png/v1/crop/x_0,y_0,w_1080,h_1052/fill/w_629,h_612,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/7d0edb_5f4ca4fe72744257b40d89b8dc760159~mv2.png" alt="" width="419" height="408" srcset="https://static.wixstatic.com/media/7d0edb_5f4ca4fe72744257b40d89b8dc760159~mv2.png/v1/crop/x_0,y_0,w_1080,h_1052/fill/w_629,h_612,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/7d0edb_5f4ca4fe72744257b40d89b8dc760159~mv2.png" fetchpriority="high" style="width: 319px; height: 308px; object-fit: cover;" alt="Ursula">
+                     <div class="degradado"></div>
+                </li>
                 </ul>
+            </div>
+            <div href="#" class="logo">
+                <img src="https://static.wixstatic.com/media/528fcb_ab864308c3514e4e81f2350e6da9e61c~mv2.jpg/v1/crop/x_47,y_129,w_398,h_229/fill/w_414,h_212,al_c,lg_1,q_80,enc_auto/logo%20ursula.jpg" alt="logo"> 
             </div>
         </aside>
+    
+        <!-- Seccion Galeria de imagenes -->
+        <div class="galeria">
+            <h3>Te puede interesar lo más buscado:</h3> 
+            <div class="grilla">
+            <!-- tarjeta1 -->
+                <div class="card">                 
+                    <div class="card-body">
+                            <div class="cont-img">
+                                <img src="/assets/img/c1-carta natal.PNG" alt="card1">                              
+                            </div>     
+                            <div class="card-textos">  
+                                <h5>Tu Carta Astral</h5>
+                                <small></small>
+                            </div>    
+                    </div>
+                        <div class="card-footer1">$95 CAD/75 USD</div>
+                        <div class="card-footer2">
+                            <a class="vermas"  href="https://www.ursulacosmic.com/astro-consultas#comp-lps/pfj4__item1">
+                              <button type="button">+ INFO</button>
+                            </a>
+                        </div>  
+                </div>
+                <!-- tarjeta2 -->
+                <div class="card">                 
+                    <div class="card-body">
+                            <div class="cont-img">
+                                <img src="/assets/img/c2-eclipses.PNG" alt="card2">
+                            </div>     
+                            <div class="card-textos">  
+                                <h5>Los Eclipses: El poder de trascender</h5>
+                                <small></small>
+                            </div>    
+                    </div>
+                        <div class="card-footer1">$140CAD/105 USD</div>
+                        <div class="card-footer2">
+                            <a class="vermas"  href="https://www.ursulacosmic.com/inscripcion-astrocursos#comp-lq2ewns3">
+                              <button type="button">+ INFO</button>
+                            </a>
+                        </div>  
+                </div>
+                <!-- tarjeta3 -->
+                <div class="card">                 
+                    <div class="card-body">
+                            <div class="cont-img">
+                                <img src="/assets/img/c3-ciclo lunar.PNG" alt="card3">
+                            </div>     
+                            <div class="card-textos">  
+                                <h5>Taller lunar</h5>
+                                <small></small>
+                            </div>    
+                    </div>
+                        <div class="card-footer1">$80 CAD/60 USD</div>
+                        <div class="card-footer2">
+                            <a class="vermas"  href="https://www.ursulacosmic.com/inscripcion-astrocursos#comp-lq2goqy9">
+                              <button type="button">+ INFO</button>
+                            </a>
+                        </div>  
+                </div>
+                <!-- tarjeta4 -->
+                <div class="card">                 
+                    <div class="card-body">
+                            <div class="cont-img">
+                                <img src="/assets/img/c4-transitos.PNG" alt="card4">
+                            </div>     
+                            <div class="card-textos">  
+                                <h5>Tránsitos y tus ciclos personales</h5>
+                                <small></small>
+                            </div>    
+                    </div>
+                        <div class="card-footer1">$170 CAD/130 USD</div>
+                        <div class="card-footer2">
+                            <a class="vermas"  href="https://www.ursulacosmic.com/inscripcion-astrocursos#comp-lq2g1jzp">
+                              <button type="button">+ INFO</button>
+                            </a>
+                        </div>  
+                </div>
+                <!-- tarjeta5 -->
+                <div class="card">                 
+                    <div class="card-body">
+                            <div class="cont-img">
+                                <img src="/assets/img/c5-sinastria.PNG" alt="card5">
+                            </div>     
+                            <div class="card-textos">  
+                                <h5>Sinastría</h5>
+                                <small></small>
+                            </div>    
+                    </div>
+                        <div class="card-footer1">$95 CAD/70 USD</div>
+                        <div class="card-footer2">
+                            <a class="vermas"  href="https://www.ursulacosmic.com/astro-consultas#comp-lpslpfi8__item-j9r9uxns">
+                              <button type="button">+ INFO</button>
+                            </a>
+                        </div>  
+                </div>
+                <!-- tarjeta6 -->
+                <div class="card">                 
+                    <div class="card-body">
+                            <div class="cont-img">
+                                <img src="/assets/img/c-6 revolucion solar.PNG" alt="card6">
+                            </div>     
+                            <div class="card-textos">  
+                                <h5>Revolución Solar: Descubre tendencias de cada año</h5>
+                                <small></small>
+                            </div>    
+                    </div>
+                        <div class="card-footer1">$190 CAD/145 USD</div>
+                        <div class="card-footer2">
+                            <a class="vermas"  href="https://www.ursulacosmic.com/inscripcion-astrocursos#comp-lq2efzyy">
+                              <button type="button">+ INFO</button>
+                            </a>
+                        </div>  
+                </div>
 
-        <section class="related-posts">
-            <h3>Te puede interesar</h3>
-            <div class="post-gallery">
-                <div class="card">
-                    <a href="#">
-                        <div class="image-container">
-                            <img src="./assets/img/post1.jpg" alt="Post 1">
-                        </div>
-                        <h3>Título del post 1</h3>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="#">
-                        <div class="image-container">
-                            <img src="./assets/img/post2.jpg" alt="Post 2">
-                        </div>
-                        <h3>Título del post 2</h3>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="#">
-                        <div class="image-container">
-                            <img src="./assets/img/post3.jpg" alt="Post 3">
-                        </div>
-                        <h3>Título del post 3</h3>
-                    </a>
-                </div>
+            </div>  
+        </div>
+  
+    </div> 
+    
+<!-- Termina escritorio -->
+        <footer class="pie">
+            <div class="pie1">
+                <a href="https://www.instagram.com/astrologiaursulacosmic/?hl=es">
+                    <i class="fa fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/astrologiaursulacosmic/">
+                    <i class="fa fa-facebook-official"></i>
+                </a> 
+                <a href="https://www.youtube.com/channel/UCennJ_Q9yn2FUlUkmkBvcgw">
+                    <i class="fa fa-youtube"></i>
+                </a>
             </div>
-        </section>
-
-        <footer>
-            <div class="info">
-                <h3>BLOG</h3>
-                <p>Totam aliquid voluptas cupiditate nisi placeat. Repellat numquam ea consequuntur placeat. Fuga amet officiis possimus illum vitae nihil dolorem beatae voluptatum. Natus.</p>
-            </div>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#">Acerca</a>
-                    </li>
-                    <li>
-                        <a href="#">Privacidad</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="copyright">
-                <p>BLOG - FS-G69 - ADL</p>
+            <div class="pie2">
+                 <h6>Todos los derechos reservados</h6>
             </div>
         </footer>
-
-    </div>
-
-    <script src="assets/js/script.js"></script>
+</div>
+    <script>
+        function scrollToSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: "smooth" });
+            }
+        }
+    </script>
 </body>
 </html>
