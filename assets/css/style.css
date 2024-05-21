@@ -681,6 +681,7 @@ footer .pie1 {
     footer{
         max-width:100%;
         overflow: hidden;
+        margin-right: 0;
     }
 
     footer     i  {
@@ -688,5 +689,11 @@ footer .pie1 {
     }
     footer .pie1 {
         gap: 4rem;
+    }
+  }
+
+  @media (min-width=1280px){
+    footer{
+        width: 1300px;
     }
   }
