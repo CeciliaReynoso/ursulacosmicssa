@@ -558,7 +558,7 @@ footer .pie1 {
         width: 200%;
         height: 100%;
         animation: spinmoon 60s alternate-reverse infinite;
-        background: url(/assets/img/suplunar.webp);
+        background: url(../img/suplunar.webp);
     }
 
     @keyframes spinmoon {
